@@ -1,0 +1,10 @@
+このアプリで
+  *Fragment
+  *Retrofit
+  *ListView
+  *MultiThreadingのことを練習しました。
+アプリで二つのFragmentがある。FirstFragmentにボタンがある、もう一つのFragmentにListViewがある。FirstFragmentのボタンを押したら、ArrayListをSecondFragmentに送る。
+
+https://api.stackexchange.com/answers?order=desc&sort=activity&site=stackoverflow　このサイトからitemのListをRetrofit(@GET)でアプリに送って、ListViewでitemのオーナーの名前やitemのオーナーのreputation（評判）やitemのオーナーのユーザーIDをFirstFragmentにあるボタンを押したら,
+SeconfFragmentのLitViewに見える。
+Retrofitは全部のオブジェクトをアプリに送るのは遅かったので、Retrofitの部分をBackgroundThreadに入れた。(onCreate)
